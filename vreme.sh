@@ -1,11 +1,11 @@
 #!/bin/bash
 
 IZBRANI_DATUM="2026-09-15"
-
 MESTA_DATOTEKA="mesta.txt"
-
 MAPA_ZA_SHRANJEVANJE="arhiv/$IZBRANI_DATUM"
 mkdir -p "$MAPA_ZA_SHRANJEVANJE"
+
+
 
 
 while IFS=',' read -r mesto lat lon || [ -n "$mesto" ]; do
@@ -42,3 +42,5 @@ done < "$MESTA_DATOTEKA"
 
 echo "--------------------------------------------------"
 echo "konec"
+
+
